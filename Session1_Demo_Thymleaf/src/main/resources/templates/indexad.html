@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    chèn thêm cssAdmin, vẫn giữ nguyên thẻ head của file này-->
+    <th:block th:include="common/admin_layout :: cssAdmin"></th:block>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page Admin</title>
+</head>
+<body>
+    <header th:replace="common/admin_layout ::headerAdmin">
+<!--        Nội dung bên dưới không được hiển thị. Vì bên trên sử dụng th:replace -->
+        Đây là header không được hiển thị
+    </header>
+
+    <span id="content" th:replace="common/admin_layout ::contentAdmin">
+        Đây là content
+    </span>
+
+
+    <footer th:replace="common/admin_layout ::footerAdmin">
+        <!--Nội dung bên dưới không được hiển thị. Vì bên trên sử dụng th:replace   -->
+        Đây là footer không được hiển thị
+    </footer>
+
+</body>
+</html>
