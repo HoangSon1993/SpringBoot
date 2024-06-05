@@ -45,10 +45,18 @@ public final class CategoryRepository {
     }
 
     public Category FindById(int id){
-        return db.queryForObject("select * from category where idc=?", new CategoryRowMapper(), new Object[] {id});
+        return db.queryForObject("select * from category where idc=?", new Object[] {id}, new CategoryRowMapper());
     }
 
     public int deleteById(int id){
-        return db.update("delete from Category where idc=?", new Object[]{id});
+        return db.update("delete from category where idc=?", new Object[]{id});
+    }
+
+    public int insert (Category newCategory){
+        return db.update("INSERT INTO Category (name,active) VALUES (?,?)", new Object[]{newCategory.getName_c(), newCategory.getActive()});
+    }
+
+    public int update(Category upCcategory){
+        return db.update("UPDATE category SET name_c = ?, active = ? WHERE idc= ?", new Object[]{upCcategory.getName_c(), upCcategory.getActive(), upCcategory.getIdc()});
     }
 }
