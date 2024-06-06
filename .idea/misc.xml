@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/Session2_layoutAdmin/pom.xml" />
         <option value="$PROJECT_DIR$/Session1_Demo_Thymleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/identity-service/pom.xml" />
+        <option value="$PROJECT_DIR$/identityService/pom.xml" />
       </list>
     </option>
   </component>

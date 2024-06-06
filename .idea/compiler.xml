@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Session1" />
+        <module name="identityService" />
+        <module name="identity-service" />
         <module name="Session2" />
       </profile>
     </annotationProcessing>
@@ -16,6 +18,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Session1" options="-parameters" />
       <module name="Session2" options="-parameters" />
+      <module name="identity-service" options="-parameters" />
+      <module name="identityService" options="-parameters" />
     </option>
   </component>
 </project>

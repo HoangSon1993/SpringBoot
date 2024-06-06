@@ -1,0 +1,19 @@
+#spring.application.name=identity-service
+#?verifyServerCertificate=false&useSSL=false&requireSSL=false"
+spring:
+  application:
+    name: identity-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/identity_service?verifyServerCertificate=false&useSSL=false&requireSSL=false"
+    username: root
+    password: spka15004Aa@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /identity
