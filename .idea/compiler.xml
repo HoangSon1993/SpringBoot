@@ -8,14 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Session1" />
-        <module name="identityService" />
-        <module name="identity-service" />
+        <module name="ConnectSqlServer" />
         <module name="Session2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="identity-service" target="17" />
+      <module name="identityService" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConnectSqlServer" options="-parameters" />
       <module name="Session1" options="-parameters" />
       <module name="Session2" options="-parameters" />
       <module name="identity-service" options="-parameters" />

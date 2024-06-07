@@ -1,13 +1,14 @@
-package com.sondev.identityservice;
+package springboot.connectsqlserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IdentityServiceApplication {
+public class ConnectSqlServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(IdentityServiceApplication.class, args);
+
+        SpringApplication.run(ConnectSqlServerApplication.class, args);
     }
 
 }
