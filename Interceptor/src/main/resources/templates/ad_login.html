@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>admin login</h1>
+    <form action="/admin/chklogin" th:action="@{/admin/chklogin}" method="POST">
+        <div class="row">
+            <div>user name</div>
+            <div>
+                <input type="text" name="usr" id="usr" placeholder="User name"/>
+            </div>
+            <div class="row">
+                <div>password</div>
+                <div><input type="password" name="pwd" id="pwd"></div>
+            </div>
+           <div class="row">
+               <div>@nbsp;</div>
+               <div><input type="submit" value="login" name="btnLog" id="btnLog"></div>
+           </div>
+        </div>
+    </form>
+</body>
+</html>
